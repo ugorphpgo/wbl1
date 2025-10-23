@@ -1,4 +1,4 @@
-package wbl1
+package main
 
 import "fmt"
 
@@ -14,4 +14,14 @@ func (h Human) PrintName() {
 
 type Action struct {
 	Human
+}
+
+func main() {
+	action := Action{
+		Human{
+			name: "cherepacha",
+			age:  22,
+		},
+	}
+	action.PrintName()
 }
