@@ -1,1 +1,5 @@
-package second
+package main
+
+func main() {
+
+}

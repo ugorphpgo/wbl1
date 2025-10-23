@@ -12,6 +12,10 @@ func (h Human) PrintName() {
 
 }
 
+func (h Human) PrintAge() {
+	fmt.Println(h.age)
+}
+
 type Action struct {
 	Human
 }
@@ -24,4 +28,5 @@ func main() {
 		},
 	}
 	action.PrintName()
+	action.PrintAge()
 }
